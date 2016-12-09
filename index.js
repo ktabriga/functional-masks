@@ -31,7 +31,7 @@ function createMaskOptions (pattern) {
 	}, {});
 }
 
-exports.default = {
+module.exports = {
 	applyMask,
 	cleanSpecialChars,
 	createMaskOptions
