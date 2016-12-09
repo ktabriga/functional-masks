@@ -6,7 +6,7 @@ function cleanSpecialChars (input) {
 
 function applyMask(input, options) {
 	if (!input) return '';
-	if (!optios) throw Error('Options is required');
+	if (!options) throw Error('Options is required');
 	const chars = cleanSpecialChars(input).split('');
 	return chars.reduce(function (acc, char, i) {
 		if (i == 0 && options[0]) return `${options[0]}${char}`;
