@@ -10,8 +10,8 @@ function applyMask(input, options) {
 	const chars = cleanSpecialChars(input).split('');
 	return chars.reduce(function (acc, char, i) {
 		if (i == 0 && options[0]) return `${options[0]}${char}`;
-		if (options[i + 1]) {
-			return `${acc}${char}${options[i + 1]}`;
+		if (options[i]) {
+			return `${acc}${options[i]}${char}`;
 		}
 		return acc + char;
 	}, '')
